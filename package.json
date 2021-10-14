@@ -1,0 +1,28 @@
+{
+  "name": "04-mexflix",
+  "version": "1.0.0",
+  "description": "Application to see a Movie Cathalogue designed for a specific group of users interested in sci-fi",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertoouu/04-Mexflix.git"
+  },
+  "keywords": [
+    "mexflix",
+    "movies",
+    "films",
+    "catalogue"
+  ],
+  "author": "albertoouu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albertoouu/04-Mexflix/issues"
+  },
+  "homepage": "https://github.com/albertoouu/04-Mexflix#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
