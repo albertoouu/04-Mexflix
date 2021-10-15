@@ -12,7 +12,7 @@ let renderMovies= (movieData) => {
 }
 
 export let getMovieFromOMDBAPI = (searchMovie) => {
-  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=ffc12cae&s=${searchMovie}`)
+  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=ffc12cae&s=${searchMovie}`)
  .then((response) => response.json())
  .then( (data) => renderMovies(data))
  .catch((error) => console.log(error))
