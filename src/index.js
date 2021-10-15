@@ -1,4 +1,4 @@
-import {getMovieFromOMDBAPI} from "/data.js"
+import {getMovieFromOMDBAPI} from "./data.js"
 
 let searchMovie = () => {
   let searchValue = document.getElementById('searchInput').value
