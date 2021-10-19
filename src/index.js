@@ -1,19 +1,14 @@
-import {getMovieFromOMDBAPI} from "./data.js"
+import {searchMoviesFromOMDBAPI} from "./data.js"
+import {printMovieFromOMDBAPI} from "./data.js"
 
 let searchMovie = () => {
   let searchValue = document.getElementById('searchInput').value
   console.log(searchValue)
-  getMovieFromOMDBAPI(searchValue)
+  searchMoviesFromOMDBAPI(searchValue)
 }
-
-let agregarDivs = () => {
-  console.log("agregarDivs")
-  let agregar = document.getElementById('catalogue')
-  for(let i =0; i<5;i++){
-  agregar.innerHTML += `<p>Hooollla</p> <h3> Es la interacion numero: ${i}</h3>`
-  }
+let printStartMovies = () => {
+  let novedades = document.getElementById('novedades')
 }
 
 let buttonSearch = document.getElementById('searchButton')
 buttonSearch.addEventListener('click',searchMovie)
-
