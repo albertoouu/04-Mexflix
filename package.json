@@ -24,5 +24,8 @@
   "homepage": "https://github.com/albertoouu/04-Mexflix#readme",
   "dependencies": {
     "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1"
   }
 }

@@ -33,6 +33,7 @@ Seguido de la pantalla de bienvenida se mostrara la pantalla del usuario y posib
 Finalmente se mostrara el catalogo personalalizado dirigido a los usuarios con predileccion a la ciencia ficción.
 
 ![Diagrama de flujo](./assets/diagramaFlujo04.jpg)
+![Diagrama de flujo2](./assets/DiagramaDeFlujo.png)
 ![userInterface](./assets/UI04.jpg)
 
 ### Pseudocodigo general

@@ -1,22 +1,81 @@
-let renderMovies= (movieData) => {
+let renderSearchMovies= (movieData) => {
   console.log(movieData)
   let catalogue = document.getElementById('catalogue')
   //let movieName = document.getElementById('movie-name')
-  let movieImg = document.getElementById('movie-img')
+  //let movieImg = document.getElementById('movie-img')
   for(let i =0; i<movieData.Search.length; i++){
     //movieName.innerHTML = movieData.Search[1].Title
     //movieImg.setAttribute('src', movieData.Search[1].Poster)
-    console.log(movieData.Search[i].Poster)
-    catalogue.innerHTML += `<h2>${movieData.Search[i].Title}</h2> <img src="${movieData.Search[i].Poster}" alt="movie-img" id="movie-img" />`
+    //console.log(movieData.Search[i].Poster)
+    catalogue.innerHTML += /*<h5>${movieData.Search[i].Title}</h5>*/ `<img src="${movieData.Search[i].Poster}" alt="movie-img" class="img-fluid rounded mx-auto" />`
   }
 }
+let renderStartMovies= (movieData,div) => {
+  //console.log(movieData)
+  //console.log(div)
+  //console.log(movieData.Poster)
+   
+    let movieModal = document.getElementById('movieModal')
+    movieModal.innerHTML += `    <div
+      class="modal fade"
+      id=`+`${movieData.imdbID}`+`
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">` + `${movieData.Title}` +
+            `</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Plot:</h5><p>${movieData.Plot}</p>
+            <h5>Actors:</h5><p>${movieData.Actors}</p>
+            <h5>Year:</h5><p>${movieData.Year}</p> </div>
+            <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>`
+     div.innerHTML += `<a href="" data-bs-toggle="modal" data-bs-target=#` + `${movieData.imdbID}` + `><img src="${movieData.Poster}" alt="movie-img" class="img-fluid rounded mx-auto" /></a>`
 
-export let getMovieFromOMDBAPI = (searchMovie) => {
-  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=ffc12cae&s=${searchMovie}`)
+}
+
+export let searchMoviesFromOMDBAPI = (searchMovie) => {
+  fetch(`https://www.omdbapi.com/?s=${searchMovie}&apikey=ffc12cae&`)
  .then((response) => response.json())
- .then( (data) => renderMovies(data))
+ .then( (data) => renderSearchMovies(data))
  .catch((error) => console.log(error))
  .finally(() => console.log("promesa resuelta"))
 }
 
-//data.Search[0].Title
+export let printMovieFromOMDBAPI = (div,Arr) => {
+  for (let i = 0; i<=(Arr.length-1);i++) {
+    fetch(`http://www.omdbapi.com/?t=${Arr[i]}&apikey=ffc12cae`)
+    .then((response) => response.json())
+    .then( (data) => {
+     // console.log(data)
+      renderStartMovies(data,div)
+    })
+    .catch((error) => console.log(error))
+    .finally(() => console.log("promesa resuelta"))
+  }
+
+}
