@@ -1,0 +1,33 @@
+#novedades {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#recomendaciones {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#clasicas {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#populares {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#tendencias {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#maraton {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#welcome-img {
+  padding-top: 60px;
+}
