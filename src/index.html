@@ -10,7 +10,7 @@
   <body class="bg-dark">
     <div class="header container-fluid" id="home">
       <!-------------------------------------------------------------------------------Navbar---------------------->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mexflix</a>
           <button
@@ -80,11 +80,33 @@
           src="/assets/blade_runner_2049.jpg"
           alt=""
           class="img-fluid rounded mx-auto d-block"
+          id="welcome-img"
       /></a>
       <!--------------------------------------------------------------------------------End-Navbar---------------------->
+
+      <!--------------------------------------------------------------------------------Seccion-Novedades----------------------->
       <div class="container-fluid text-white" id="novedades">
         <h3>Novedades</h3>
       </div>
+      <!--<div class="contenedor-titulo-controles">
+          <h3>Novedades</h3>
+          <div class="indicadores"></div>
+        </div>
+        <div class="contenedor-principal">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            I
+          </button>
+
+          <div class="contenedor-carousel">
+            <div class="carousel" id="novedades"></div>
+          </div>
+
+          <button role="button" id="flecha-derecha" class="flecha-derecha">
+            D
+          </button>
+        </div>
+      </div>-->
+      <!--------------------------------------------------------------------------------Seccion-Novedades----------------------->
       <div class="container-fluid text-white" id="recomendaciones">
         <h3>Recomendaciones</h3>
       </div>
@@ -100,10 +122,6 @@
       <div class="container-fluid text-white" id="maraton">
         <h3>Maraton</h3>
       </div>
-
-      <!--<input type="text" name="" id="searchInput" />
-      <button id="searchButton">Buscar pelicula</button>
-      -->
     </div>
 
     <div id="boton">

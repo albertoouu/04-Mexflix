@@ -6,7 +6,7 @@ let renderSearchMovies= (movieData) => {
   for(let i =0; i<movieData.Search.length; i++){
     //movieName.innerHTML = movieData.Search[1].Title
     //movieImg.setAttribute('src', movieData.Search[1].Poster)
-    //console.log(movieData.Search[i].Poster)
+    console.log(movieData.Search[i].Poster)
     catalogue.innerHTML += /*<h5>${movieData.Search[i].Title}</h5>*/ `<img src="${movieData.Search[i].Poster}" alt="movie-img" class="img-fluid rounded mx-auto" />`
   }
 }
@@ -68,7 +68,7 @@ export let searchMoviesFromOMDBAPI = (searchMovie) => {
 
 export let printMovieFromOMDBAPI = (div,Arr) => {
   for (let i = 0; i<=(Arr.length-1);i++) {
-    fetch(`http://www.omdbapi.com/?t=${Arr[i]}&apikey=ffc12cae`)
+    fetch(`https://www.omdbapi.com/?t=${Arr[i]}&apikey=ffc12cae`)
     .then((response) => response.json())
     .then( (data) => {
      // console.log(data)
