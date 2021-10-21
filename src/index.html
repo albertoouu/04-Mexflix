@@ -36,7 +36,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#novedades">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -47,19 +50,22 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Mas
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#clasicas">Clasicas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#populares">Populares</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#tendencias">Tendencias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#maraton">Maraton</a>
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <section class="d-flex">
@@ -79,7 +85,7 @@
       </nav>
       <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
         ><img
-          src="https://raw.githubusercontent.com/albertoouu/04-Mexflix/release/assets/blade_runner_2049.jpg"
+          src="https://www.themoviedb.org/t/p/original/tbH1Zvo2Reg0xnrh0PQC9cJxuZ0.jpg"
           alt=""
           class="img-fluid rounded mx-auto d-block"
           id="welcome-img"
@@ -127,12 +133,62 @@
     </div>
 
     <div id="boton">
-      <button type="button" class="btn btn-primary" id="comeBack">
+      <button type="button" class="btn btn-primary mx-auto" id="comeBack">
         Regresar
       </button>
     </div>
-    <div id="catalogue" class="text-white"></div>
+    <div id="catalogue" class="container"></div>
     <div id="movieModal"></div>
+    <div id="movieModalSearch"></div>
+
+    <!----------------------------------------------------------Modal de la imágen de bienvenida-->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Blade Runner 2049
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Plot:</h5>
+            <p>
+              Young Blade Runner K's discovery of a long-buried secret leads him
+              to track down former Blade Runner Rick Deckard, who's been missing
+              for thirty years.
+            </p>
+            <h5>Actors:</h5>
+            <p>Harrison Ford, Ryan Gosling, Ana de Armas</p>
+            <h5>Year</h5>
+            <p>2017</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--................................................................................................................-->
     <script src="index.js" type="module"></script>

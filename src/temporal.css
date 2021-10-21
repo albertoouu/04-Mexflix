@@ -31,3 +31,10 @@
 #welcome-img {
   padding-top: 60px;
 }
+#boton {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
