@@ -43,7 +43,6 @@ let renderSearchMovies= (movieData) => {
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
@@ -90,7 +89,6 @@ let renderStartMovies= (movieData,div) => {
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
