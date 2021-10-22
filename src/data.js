@@ -1,13 +1,53 @@
 let renderSearchMovies= (movieData) => {
   console.log(movieData)
   let catalogue = document.getElementById('catalogue')
+      let movieModalSearch = document.getElementById('movieModalSearch')
   //let movieName = document.getElementById('movie-name')
   //let movieImg = document.getElementById('movie-img')
   for(let i =0; i<movieData.Search.length; i++){
     //movieName.innerHTML = movieData.Search[1].Title
     //movieImg.setAttribute('src', movieData.Search[1].Poster)
-    console.log(movieData.Search[i].Poster)
-    catalogue.innerHTML += /*<h5>${movieData.Search[i].Title}</h5>*/ `<img src="${movieData.Search[i].Poster}" alt="movie-img" class="img-fluid rounded mx-auto" />`
+    console.log(movieData.Search[i].imdbID)
+
+
+    movieModalSearch.innerHTML += `    <div
+      class="modal fade"
+      id=`+`${movieData.Search[i].imdbID}`+`
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">` + `${movieData.Search[i].Title}` +
+            `</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Type:</h5><p>${movieData.Search[i].Type}</p>
+            <h5>Year:</h5><p>${movieData.Search[i].Year}</p> </div>
+            <h5>imdbID:</h5><p>${movieData.Search[i].imdbID}</p>
+            <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>`
+    catalogue.innerHTML += `<a href="" data-bs-toggle="modal" data-bs-target=#` + `${movieData.Search[i].imdbID}` + `><img src="${movieData.Search[i].Poster}" alt="movie-img" class="img-fluid rounded mx-auto" /></a>`
   }
 }
 let renderStartMovies= (movieData,div) => {
@@ -49,7 +89,6 @@ let renderStartMovies= (movieData,div) => {
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Understood</button>
           </div>
         </div>
       </div>
