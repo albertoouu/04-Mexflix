@@ -50,3 +50,9 @@ si se da 'click' en un boton **buscar**, imprime en pantalla peliculas que coinc
 en todo el flujo, se mostrara un boton con la funcionalidad de regresar a la pantalla "home"
 
 ```
+
+### Deployment
+
+![captura de pantalla 1](./assets/SS1.png)
+![captura de pantalla 2](./assets/SS2.png)
+![captura de pantalla 3](./assets/SS3.png)

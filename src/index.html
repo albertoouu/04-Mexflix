@@ -11,137 +11,124 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Sci-Fi(Mexflix)</title>
   </head>
   <body class="bg-dark">
     <div class="header container-fluid" id="home">
       <!-------------------------------------------------------------------------------Navbar---------------------->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mexflix</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#novedades">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Mas
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#clasicas">Clasicas</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#populares">Populares</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#tendencias">Tendencias</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#maraton">Maraton</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <section class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                id="searchInput2"
-              />
-              <button class="btn btn-outline-success" id="searchButton2">
-                Search
-              </button>
-            </section>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="/assets/logoChico.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#novedades">Novedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#recomendaciones"
+                    >Recomendaciones</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Mas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#clasicas">Clasicas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#populares">Populares</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#tendencias">Tendencias</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#maraton">Maraton</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <section class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="searchInput2"
+                />
+                <button class="btn btn-outline-success" id="searchButton2">
+                  Search
+                </button>
+              </section>
+            </div>
           </div>
-        </div>
-      </nav>
-      <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-        ><img
-          src="https://www.themoviedb.org/t/p/original/tbH1Zvo2Reg0xnrh0PQC9cJxuZ0.jpg"
-          alt=""
-          class="img-fluid rounded mx-auto d-block"
-          id="welcome-img"
-      /></a>
+        </nav>
+        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          ><img
+            src="https://www.themoviedb.org/t/p/original/tbH1Zvo2Reg0xnrh0PQC9cJxuZ0.jpg"
+            alt=""
+            class="img-fluid rounded mx-auto d-block"
+            id="welcome-img"
+        /></a>
+      </div>
+
       <!--------------------------------------------------------------------------------End-Navbar---------------------->
 
-      <!--------------------------------------------------------------------------------Seccion-Novedades----------------------->
-      <div class="container-fluid text-white" id="novedades">
-        <h3>Novedades</h3>
-      </div>
-      <!--<div class="contenedor-titulo-controles">
-          <h3>Novedades</h3>
-          <div class="indicadores"></div>
-        </div>
-        <div class="contenedor-principal">
-          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-            I
-          </button>
-
-          <div class="contenedor-carousel">
-            <div class="carousel" id="novedades"></div>
-          </div>
-
-          <button role="button" id="flecha-derecha" class="flecha-derecha">
-            D
-          </button>
-        </div>
-      </div>-->
-      <!--------------------------------------------------------------------------------Seccion-Novedades----------------------->
-      <div class="container-fluid text-white" id="recomendaciones">
-        <h3>Recomendaciones</h3>
-      </div>
-      <div class="container-fluid text-white" id="clasicas">
-        <h3>Clasicas</h3>
-      </div>
-      <div class="container-fluid text-white" id="populares">
-        <h3>Populares</h3>
-      </div>
-      <div class="container-fluid text-white" id="tendencias">
-        <h3>Tendencias</h3>
-      </div>
-      <div class="container-fluid text-white" id="maraton">
-        <h3>Maraton</h3>
-      </div>
+      <!-------------------------------------------Divs donde se renderean los posters de las peliculas preseleccionadas---------------------->
+      <h3 class="text-white">Novedades</h3>
+      <div class="container-fluid text-white" id="novedades"></div>
+      <h3 class="text-white textoh3">Recomendaciones</h3>
+      <div class="container-fluid text-white" id="recomendaciones"></div>
+      <h3 class="text-white textoh3">Clasicas</h3>
+      <div class="container-fluid text-white" id="clasicas"></div>
+      <h3 class="text-white textoh3">Populares</h3>
+      <div class="container-fluid text-white" id="populares"></div>
+      <h3 class="text-white textoh3">Tendencias</h3>
+      <div class="container-fluid text-white" id="tendencias"></div>
+      <h3 class="text-white textoh3">Maraton</h3>
+      <div class="container-fluid text-white" id="maraton"></div>
+      <!---------------------------------- Acaban Divs donde se renderean los posters de las peliculas preseleccionadas----------------------->
     </div>
-
     <div id="boton">
       <button type="button" class="btn btn-primary mx-auto" id="comeBack">
         Regresar
       </button>
     </div>
     <div id="catalogue"></div>
+    <!--Div donde se renderean las peliculas buscadas-->
     <div id="movieModal"></div>
+    <!--Div donde se deposita el codigo html para los modales de las peliculas preseleccionadas-->
     <div id="movieModalSearch"></div>
+    <!--Div donde se deposita el codigo html para los modales de las peliculas buscadas-->
 
-    <!----------------------------------------------------------Modal de la imágen de bienvenida-->
+    <!----------------------------------------------------------Modal de la imágen de bienvenida--------------------------------------------->
     <div
       class="modal fade"
       id="staticBackdrop"
@@ -189,7 +176,7 @@
       </div>
     </div>
 
-    <!--................................................................................................................-->
+    <!--.............................................Acaba modal de la imágen de bienvenida................................-->
     <script src="index.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

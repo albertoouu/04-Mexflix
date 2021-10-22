@@ -1,4 +1,4 @@
-let renderSearchMovies= (movieData) => {
+let renderSearchMovies= (movieData) => {//se renderean las peliculas mediante el input que el usuario ingreso 
   console.log(movieData)
   let catalogue = document.getElementById('catalogue')
       let movieModalSearch = document.getElementById('movieModalSearch')
@@ -7,9 +7,9 @@ let renderSearchMovies= (movieData) => {
   for(let i =0; i<movieData.Search.length; i++){
     //movieName.innerHTML = movieData.Search[1].Title
     //movieImg.setAttribute('src', movieData.Search[1].Poster)
-    console.log(movieData.Search[i].imdbID)
+    //console.log(movieData.Search[i].imdbID)
 
-
+    //Se crea el codigo html necesario para los modales, en esta caso los modales de las peliculas buscadas
     movieModalSearch.innerHTML += `    <div
       class="modal fade"
       id=`+`${movieData.Search[i].imdbID}`+`
@@ -48,13 +48,9 @@ let renderSearchMovies= (movieData) => {
       </div>
     </div>`
     catalogue.innerHTML += `<a href="" data-bs-toggle="modal" data-bs-target=#` + `${movieData.Search[i].imdbID}` + `><img src="${movieData.Search[i].Poster}" alt="movie-img" class="img-fluid rounded mx-auto" /></a>`
-  }
+  }//se renderean las peliculas buscadas en en el div="catalogue"
 }
 let renderStartMovies= (movieData,div) => {
-  //console.log(movieData)
-  //console.log(div)
-  //console.log(movieData.Poster)
-   
     let movieModal = document.getElementById('movieModal')
     movieModal.innerHTML += `    <div
       class="modal fade"
@@ -93,7 +89,7 @@ let renderStartMovies= (movieData,div) => {
         </div>
       </div>
     </div>`
-     div.innerHTML += `<a href="" data-bs-toggle="modal" data-bs-target=#` + `${movieData.imdbID}` + `><img src="${movieData.Poster}" alt="movie-img" class="img-fluid rounded mx-auto" /></a>`
+     div.innerHTML += `<a href="" data-bs-toggle="modal" data-bs-target=#` + `${movieData.imdbID}` + `><img src="${movieData.Poster}" alt="movie-img" class="img-fluid rounded mx-auto imagenes" /></a>`
 
 }
 
