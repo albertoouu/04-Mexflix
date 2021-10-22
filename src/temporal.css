@@ -52,3 +52,25 @@
   align-items: center;
   justify-content: center;
 }
+
+.imagenes {
+  max-height: 300px;
+  padding: 0 5px;
+}
+#welcome-img {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  padding-top: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  .imagenes {
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imagenes {
+    max-height: 100px;
+  }
+}
